@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
-// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {MD3Colors} from 'react-native-paper';
 
 type Props = {
@@ -8,10 +8,10 @@ type Props = {
   icon: string;
 };
 
-const Placeholder: FC<Props> = ({label}) => {
+const Placeholder: FC<Props> = ({label, icon}) => {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <Icon size={96} color={MD3Colors.primary20} name={icon} /> */}
+      <Icon size={96} color={MD3Colors.primary20} name={icon} />
       <Text style={styles.text}>{label}</Text>
     </SafeAreaView>
   );

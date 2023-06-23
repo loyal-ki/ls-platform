@@ -20,7 +20,7 @@ const TabsNavigator = () => {
         component={HomeNavigator}
         options={{
           title: 'Home',
-          // tabBarIcon: 'home',
+          tabBarIcon: 'home',
         }}
       />
       <Tabs.Screen
@@ -28,7 +28,7 @@ const TabsNavigator = () => {
         component={ChatNavigator}
         options={{
           title: 'Chat',
-          // tabBarIcon: 'chat',
+          tabBarIcon: 'chat',
         }}
       />
       <Tabs.Screen
@@ -36,7 +36,7 @@ const TabsNavigator = () => {
         component={AccountNavigator}
         options={{
           title: 'Account',
-          // tabBarIcon: 'account',
+          tabBarIcon: 'account',
         }}
       />
     </Tabs.Navigator>
